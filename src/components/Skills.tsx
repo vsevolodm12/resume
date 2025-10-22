@@ -1,0 +1,85 @@
+import { TrendingUp, Settings, Users, GraduationCap } from 'lucide-react';
+
+export const Skills = () => {
+  const skillCategories = [
+    {
+      icon: TrendingUp,
+      title: 'Маркетинг',
+      skills: [
+        'Контент здесь будет позже',
+        'Контент здесь будет позже',
+        'Контент здесь будет позже',
+        'Контент здесь будет позже'
+      ]
+    },
+    {
+      icon: Settings,
+      title: 'Автоматизация',
+      skills: [
+        'Контент здесь будет позже',
+        'Контент здесь будет позже',
+        'Контент здесь будет позже',
+        'Контент здесь будет позже'
+      ]
+    },
+    {
+      icon: Users,
+      title: 'Управление персоналом',
+      skills: [
+        'Контент здесь будет позже',
+        'Контент здесь будет позже',
+        'Контент здесь будет позже',
+        'Контент здесь будет позже'
+      ]
+    },
+    {
+      icon: GraduationCap,
+      title: 'EdTech',
+      skills: [
+        'Контент здесь будет позже',
+        'Контент здесь будет позже',
+        'Контент здесь будет позже',
+        'Контент здесь будет позже'
+      ]
+    }
+  ];
+
+  return (
+    <section id="skills" className="py-12 sm:py-16 px-6 sm:px-6 bg-white dark:bg-gray-900">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
+          Навыки
+        </h2>
+        <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 mb-6 sm:mb-8 max-w-3xl">
+          Основные направления экспертизы
+        </p>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {skillCategories.map((category, index) => {
+            const Icon = category.icon;
+            return (
+              <div key={index} className="border border-gray-200 dark:border-gray-800 rounded-2xl p-6 sm:p-8 bg-white dark:bg-gray-800">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-12 h-12 bg-gray-100 dark:bg-gray-700 rounded-xl flex items-center justify-center">
+                    <Icon className="w-6 h-6 text-gray-700 dark:text-gray-300" />
+                  </div>
+                  <h3 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white">
+                    {category.title}
+                  </h3>
+                </div>
+                <ul className="space-y-3">
+                  {category.skills.map((skill, idx) => (
+                    <li key={idx} className="text-gray-600 dark:text-gray-400 text-base sm:text-lg leading-relaxed pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400 dark:before:text-gray-600">
+                      {skill}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+};
+
