@@ -22,6 +22,15 @@ export const FitnessCRM = () => {
         </h2>
         
         <div className="space-y-8">
+          <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 dark:border-red-400 p-6 rounded-r-lg mb-6">
+            <h3 className="text-lg sm:text-xl font-semibold text-red-900 dark:text-red-200 mb-2">
+              Основная проблема
+            </h3>
+            <p className="text-lg sm:text-xl text-red-800 dark:text-red-300 leading-relaxed">
+              В итоге всё это выливалось в серьёзные убытки: деньги утекали через непроверенные списания тренировок и занятия в долг, а ручной учёт просто не позволял это контролировать.
+            </p>
+          </div>
+          
           <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 leading-relaxed">
             Провёл полный аудит бизнес-процессов элитного фитнес-клуба и выявил узкие места: ручное списание тренировок, дублирование данных, отсутствие контроля и потери выручки.
           </p>
@@ -67,35 +76,28 @@ export const FitnessCRM = () => {
             </p>
           </div>
           
-          {/* Placeholder for screenshots */}
+          {/* Screenshots */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-            <div className="bg-gray-100 dark:bg-gray-700 rounded-xl p-8 border-2 border-dashed border-gray-300 dark:border-gray-600 flex items-center justify-center min-h-[200px]">
-              <span className="text-gray-500 dark:text-gray-400 text-center">Скриншот статистики 1</span>
+            <div className="rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700">
+              <div className="bg-gray-50 dark:bg-gray-800 px-4 py-3 border-b border-gray-200 dark:border-gray-700">
+                <span className="text-lg font-semibold text-gray-700 dark:text-gray-300">До</span>
+              </div>
+              <img 
+                src="/before.jpeg" 
+                alt="Статистика до внедрения системы" 
+                className="w-full h-auto object-contain"
+              />
             </div>
-            <div className="bg-gray-100 dark:bg-gray-700 rounded-xl p-8 border-2 border-dashed border-gray-300 dark:border-gray-600 flex items-center justify-center min-h-[200px]">
-              <span className="text-gray-500 dark:text-gray-400 text-center">Скриншот статистики 2</span>
+            <div className="rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700">
+              <div className="bg-gray-50 dark:bg-gray-800 px-4 py-3 border-b border-gray-200 dark:border-gray-700">
+                <span className="text-lg font-semibold text-gray-700 dark:text-gray-300">После</span>
+              </div>
+              <img 
+                src="/after.jpeg" 
+                alt="Статистика после внедрения системы" 
+                className="w-full h-auto object-contain"
+              />
             </div>
-          </div>
-        </div>
-
-        {/* Skills Section */}
-        <div className="mt-8">
-          <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4 md:mb-5">Навыки</h3>
-          <div className="flex flex-wrap gap-2 sm:gap-3">
-            {[
-              'Бизнес-анализ и описание процессов',
-              'Построение и внедрение CRM-систем',
-              'Настройка логики и интеграций 1С',
-              'Управление изменениями и обучение персонала',
-              'Контроль эффективности и аналитика'
-            ].map((skill) => (
-              <span
-                key={skill}
-                className="inline-flex items-center px-4 sm:px-6 py-2.5 sm:py-3 bg-gray-100/70 dark:bg-gray-700/70 border border-gray-200/50 dark:border-gray-600/50 text-black dark:text-white rounded-xl text-base sm:text-lg font-medium transition-all duration-200 hover:bg-gray-100 dark:hover:bg-gray-700 hover:border-gray-200 dark:hover:border-gray-600"
-              >
-                {skill}
-              </span>
-            ))}
           </div>
         </div>
       </div>
@@ -248,6 +250,15 @@ export const FitnessCRM = () => {
                     Купленное ПО 1С Фитнес Клуб не использовалось — сотрудники не понимали, как работать с ним
                   </li>
                 </ul>
+              </div>
+
+              <div className="mt-8 bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 dark:border-red-400 p-6 rounded-r-lg">
+                <h3 className="text-lg sm:text-xl font-semibold text-red-900 dark:text-red-200 mb-2">
+                  Вывод
+                </h3>
+                <p className="text-lg sm:text-xl text-red-800 dark:text-red-300 leading-relaxed">
+                  Ручной учёт, отсутствие контроля за списанием тренировок и возможность тренировок «в долг» приводили к утечкам выручки и значительным денежным потерям.
+                </p>
               </div>
             </div>
           </div>

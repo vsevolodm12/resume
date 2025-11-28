@@ -38,9 +38,8 @@ export const Hero = () => {
               
               {/* Desktop Navigation */}
               <nav className="flex items-center gap-6">
-                <a href="/#skills" className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:scale-[1.025] transition-all duration-300 ease-out">Навыки</a>
+                <a href="/#about" className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:scale-[1.025] transition-all duration-300 ease-out">О себе</a>
                 <a href="/#projects" className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:scale-[1.025] transition-all duration-300 ease-out">Проекты</a>
-                <a href="/#additional" className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:scale-[1.025] transition-all duration-300 ease-out">Дополнительно</a>
                 <a 
                   href="https://t.me/vsevolodmarchenko" 
                   target="_blank" 
@@ -58,11 +57,11 @@ export const Hero = () => {
             <div className="md:hidden mt-4 pb-4 border-t border-gray-200 dark:border-gray-800">
               <nav className="flex flex-col space-y-2 pt-4">
                 <a 
-                  href="/#skills" 
+                  href="/#about" 
                   className="text-gray-600 dark:text-gray-400 active:text-gray-900 active:dark:text-white py-3 px-3 rounded-lg active:bg-gray-50 active:dark:bg-gray-800 active:scale-[0.98] transition-all duration-150 ease-out touch-manipulation text-base font-medium"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  Навыки
+                  О себе
                 </a>
                 <a 
                   href="/#projects" 
@@ -70,13 +69,6 @@ export const Hero = () => {
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Проекты
-                </a>
-                <a 
-                  href="/#additional" 
-                  className="text-gray-600 dark:text-gray-400 active:text-gray-900 active:dark:text-white py-3 px-3 rounded-lg active:bg-gray-50 active:dark:bg-gray-800 active:scale-[0.98] transition-all duration-150 ease-out touch-manipulation text-base font-medium"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Дополнительно
                 </a>
                 <a 
                   href="https://t.me/vsevolodmarchenko" 

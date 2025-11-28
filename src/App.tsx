@@ -1,8 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Hero } from './components/Hero';
+import { About } from './components/About';
 import { Cases } from './components/Cases';
-import { Skills } from './components/Skills';
-import { AdditionalSkills } from './components/AdditionalSkills';
 import { WindowsAutomation } from './pages/WindowsAutomation';
 import { FitnessCRM } from './pages/FitnessCRM';
 import { GPTEducation } from './pages/GPTEducation';
@@ -12,9 +11,8 @@ function HomePage() {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
       <Hero />
-      <Skills />
+      <About />
       <Cases />
-      <AdditionalSkills />
       
       <footer className="py-12 sm:py-16 px-6 sm:px-6 border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto">
